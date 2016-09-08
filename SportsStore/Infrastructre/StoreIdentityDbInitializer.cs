@@ -20,6 +20,7 @@ namespace SportsStore.Infrastructre
             {
                 roleMgr.Create(new StoreRole(roleName));
             }
+
             StoreUser user = userMgr.FindByName(userName);
             if (user == null)
             {

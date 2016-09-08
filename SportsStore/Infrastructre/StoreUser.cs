@@ -4,6 +4,5 @@ namespace SportsStore.Infrastructre
 {
     public class StoreUser : IdentityUser
     {
-
     }
 }

@@ -12,8 +12,7 @@ namespace SportsStore.Infrastructre
 
         public static StoreRoleManager Create(IdentityFactoryOptions<StoreRoleManager> options, IOwinContext context)
         {
-            return new StoreRoleManager(new
-            RoleStore<StoreRole>(context.Get<StoreIdentityDbContext>()));
+            return new StoreRoleManager(new RoleStore<StoreRole>(context.Get<StoreIdentityDbContext>()));
         }
     }
 }

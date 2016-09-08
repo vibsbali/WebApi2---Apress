@@ -4,6 +4,12 @@
     ViewBag.Title = "Index";
 }
 
+<div class="panel panel-primary ">
+    <a href="/prep/signin" class="btn btn-sm btn-primary">Sign In</a>
+    <a href="/prep/signout" class="btn btn-sm btn-primary">Sign Out</a>
+    User: @(User.Identity.Name)
+</div>
+
 <h2>Products</h2>
 
 <div class="panel panel-primary">
