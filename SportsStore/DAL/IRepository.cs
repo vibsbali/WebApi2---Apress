@@ -1,8 +1,8 @@
-using SportsStore.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using SportsStore.Models;
 
-namespace SportsStore.Infrastructre
+namespace SportsStore.DAL
 {
     public interface IRepository
     {

@@ -176,15 +176,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Infrastructre\IRepository.cs" />
-    <Compile Include="Infrastructre\Repository.cs" />
+    <Compile Include="DAL\IRepository.cs" />
+    <Compile Include="DAL\Repository.cs" />
+    <Compile Include="Infrastructre\StoreIdentityDbContext.cs" />
+    <Compile Include="Infrastructre\StoreIdentityDbInitializer.cs" />
+    <Compile Include="Infrastructre\StoreRole.cs" />
+    <Compile Include="Infrastructre\StoreRoleManager.cs" />
+    <Compile Include="Infrastructre\StoreUser.cs" />
+    <Compile Include="Infrastructre\StoreUserManager.cs" />
     <Compile Include="Migrations\201609081133498_PendingChagnes.cs" />
     <Compile Include="Migrations\201609081133498_PendingChagnes.Designer.cs">
       <DependentUpon>201609081133498_PendingChagnes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609081225182_AddedIdentity.cs" />
+    <Compile Include="Migrations\201609081225182_AddedIdentity.Designer.cs">
+      <DependentUpon>201609081225182_AddedIdentity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ProductDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Start\Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -214,6 +225,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201609081133498_PendingChagnes.resx">
       <DependentUpon>201609081133498_PendingChagnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609081225182_AddedIdentity.resx">
+      <DependentUpon>201609081225182_AddedIdentity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

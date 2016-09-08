@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SportsStore.Infrastructre
+namespace SportsStore.DAL
 {
     public class Repository : IRepository
     {
+        //should be using dispose method here
         private ProductDbContext context = new ProductDbContext();
 
         public IEnumerable<Product> Products => context.Products;

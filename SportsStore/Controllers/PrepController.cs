@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-using SportsStore.Infrastructre;
+using SportsStore.DAL;
 using SportsStore.Models;
 
 namespace SportsStore.Controllers
