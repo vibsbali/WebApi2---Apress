@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SportsStore.DataAccessLayer
+namespace SportsStore.Infrastructre
 {
     public class Repository : IRepository
     {
@@ -10,7 +10,7 @@ namespace SportsStore.DataAccessLayer
 
         public IEnumerable<Product> Products => context.Products;
 
-        public async Task<int> SaveProductsAsync(Product product)
+        public async Task<int> SaveProductAsync(Product product)
         {
             if (product.Id == 0)
             {
