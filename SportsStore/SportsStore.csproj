@@ -199,6 +199,10 @@
     <Compile Include="Migrations\201609081225182_AddedIdentity.Designer.cs">
       <DependentUpon>201609081225182_AddedIdentity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609090921184_DataValidation.cs" />
+    <Compile Include="Migrations\201609090921184_DataValidation.Designer.cs">
+      <DependentUpon>201609090921184_DataValidation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ProductDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -235,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609081225182_AddedIdentity.resx">
       <DependentUpon>201609081225182_AddedIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609090921184_DataValidation.resx">
+      <DependentUpon>201609090921184_DataValidation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
