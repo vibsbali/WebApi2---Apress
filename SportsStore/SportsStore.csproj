@@ -184,6 +184,7 @@
     </Compile>
     <Compile Include="DAL\IRepository.cs" />
     <Compile Include="DAL\Repository.cs" />
+    <Compile Include="Infrastructre\StoreAuthProvider.cs" />
     <Compile Include="Infrastructre\StoreIdentityDbContext.cs" />
     <Compile Include="Infrastructre\StoreIdentityDbInitializer.cs" />
     <Compile Include="Infrastructre\StoreRole.cs" />
