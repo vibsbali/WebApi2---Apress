@@ -32,9 +32,15 @@ namespace SportsStore.Controllers
             return Ok(product);
         }
 
-        public async Task PostProduct(Product product)
+        public async Task<IHttpActionResult> PostProduct(Product product)
         {
-            await Repository.SaveProductAsync(product);
+            if (ModelState.IsValid)
+            {
+                await Repository.SaveProductAsync(product);
+                return Ok();
+            }
+
+            return BadRequest(ModelState);
         }
 
         [Authorize(Roles = "Administrators")]
