@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using SportsStore.Infrastructre;
+using SportsStore.Infrastructre.IdentityAndSecurity;
 
 [assembly: OwinStartup(typeof(SportsStore.IdentityConfig))]
 

@@ -4,7 +4,11 @@
     angular.module("SportsStoreApp").controller("authController", function($http) {
         var vm = this;
 
-        vm.user = {};
+        vm.user = {
+            username: "Admin",
+            password: "secret",
+            isAuthenticated: false
+        };
 
         vm.authenticate = function() {
             console.log("calling authentication");
@@ -25,6 +29,7 @@
                 }
             }).then(function success(response) {
                 console.log(response);
+                vm.user.isAuthenticated = true;
             }, function error(response) {
                 console.log(response);
             });

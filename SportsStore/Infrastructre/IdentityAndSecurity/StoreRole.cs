@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace SportsStore.Infrastructre
+namespace SportsStore.Infrastructre.IdentityAndSecurity
 {
     public class StoreRole : IdentityRole
     {

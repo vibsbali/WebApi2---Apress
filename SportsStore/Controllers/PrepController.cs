@@ -2,12 +2,11 @@
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using SportsStore.DAL;
-using SportsStore.Infrastructre;
 using SportsStore.Models;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-
+using SportsStore.Infrastructre.IdentityAndSecurity;
 
 
 namespace SportsStore.Controllers

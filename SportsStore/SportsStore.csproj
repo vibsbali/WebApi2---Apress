@@ -175,12 +175,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Infrastructre\IdentityAndSecurity\ReadmeToUnderstand.txt" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
-    <Content Include="Infrastructre\ReadmeToUnderstand.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
@@ -200,13 +200,13 @@
     </Compile>
     <Compile Include="DAL\IRepository.cs" />
     <Compile Include="DAL\Repository.cs" />
-    <Compile Include="Infrastructre\StoreAuthProvider.cs" />
-    <Compile Include="Infrastructre\StoreIdentityDbContext.cs" />
-    <Compile Include="Infrastructre\StoreIdentityDbInitializer.cs" />
-    <Compile Include="Infrastructre\StoreRole.cs" />
-    <Compile Include="Infrastructre\StoreRoleManager.cs" />
-    <Compile Include="Infrastructre\StoreUser.cs" />
-    <Compile Include="Infrastructre\StoreUserManager.cs" />
+    <Compile Include="Infrastructre\IdentityAndSecurity\StoreAuthProvider.cs" />
+    <Compile Include="Infrastructre\IdentityAndSecurity\StoreIdentityDbContext.cs" />
+    <Compile Include="Infrastructre\IdentityAndSecurity\StoreIdentityDbInitializer.cs" />
+    <Compile Include="Infrastructre\IdentityAndSecurity\StoreRole.cs" />
+    <Compile Include="Infrastructre\IdentityAndSecurity\StoreRoleManager.cs" />
+    <Compile Include="Infrastructre\IdentityAndSecurity\StoreUser.cs" />
+    <Compile Include="Infrastructre\IdentityAndSecurity\StoreUserManager.cs" />
     <Compile Include="Migrations\201609081133498_PendingChagnes.cs" />
     <Compile Include="Migrations\201609081133498_PendingChagnes.Designer.cs">
       <DependentUpon>201609081133498_PendingChagnes.cs</DependentUpon>

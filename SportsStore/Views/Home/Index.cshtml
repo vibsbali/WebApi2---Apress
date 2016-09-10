@@ -11,11 +11,11 @@
             <table class="table table-striped">
                 <tr>
                     <td>Authenticated:</td>
-                    <td ng-model="vm.user.isAuthenticated"></td>
+                    <td>{{vm.user.isAuthenticated}}</td>
                 </tr>
                 <tr>
                     <td>User:</td>
-                    <td ng-model="vm.user.userName"></td>
+                    <td><span ng-show="vm.user.username" ng-bind="vm.user.username"></span></td>
                 </tr>
                 <tr>
                     <td>

@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace SportsStore.Infrastructre
+namespace SportsStore.Infrastructre.IdentityAndSecurity
 {
     public class StoreIdentityDbContext : IdentityDbContext<StoreUser>
     {
