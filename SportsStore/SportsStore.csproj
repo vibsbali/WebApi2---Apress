@@ -221,6 +221,10 @@
     <Compile Include="Migrations\201609090921184_DataValidation.Designer.cs">
       <DependentUpon>201609090921184_DataValidation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609100554119_AddedDataAnnotations.cs" />
+    <Compile Include="Migrations\201609100554119_AddedDataAnnotations.Designer.cs">
+      <DependentUpon>201609100554119_AddedDataAnnotations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ProductDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -261,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609090921184_DataValidation.resx">
       <DependentUpon>201609090921184_DataValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609100554119_AddedDataAnnotations.resx">
+      <DependentUpon>201609100554119_AddedDataAnnotations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
