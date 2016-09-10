@@ -12,7 +12,8 @@ namespace SportsStore.Controllers
 
         public ProductsController()
         {
-            Repository = new Repository();
+            Repository =
+                (IRepository)GlobalConfiguration.Configuration.DependencyResolver.GetService(typeof(IRepository));
         }
 
         public IHttpActionResult GetProducts()
@@ -32,6 +33,7 @@ namespace SportsStore.Controllers
             return Ok(product);
         }
 
+        [Authorize(Roles = "Administrators")]
         public async Task<IHttpActionResult> PostProduct(Product product)
         {
             if (ModelState.IsValid)

@@ -193,6 +193,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\PrepController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -200,6 +201,7 @@
     </Compile>
     <Compile Include="DAL\IRepository.cs" />
     <Compile Include="DAL\Repository.cs" />
+    <Compile Include="Infrastructre\DI\CustomResolver.cs" />
     <Compile Include="Infrastructre\IdentityAndSecurity\StoreAuthProvider.cs" />
     <Compile Include="Infrastructre\IdentityAndSecurity\StoreIdentityDbContext.cs" />
     <Compile Include="Infrastructre\IdentityAndSecurity\StoreIdentityDbInitializer.cs" />

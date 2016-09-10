@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using SportsStore.Infrastructre.DI;
+using System.Web.Http;
 
 namespace SportsStore
 {
@@ -8,7 +9,7 @@ namespace SportsStore
         {
             //Enable CORS
             config.EnableCors();
-            
+
             // Web API configuration and services
 
             // Web API routes
@@ -19,6 +20,12 @@ namespace SportsStore
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.DependencyResolver = new CustomResolver();
+
+
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling =
+                Newtonsoft.Json.ReferenceLoopHandling.Ignore;
         }
     }
 }
